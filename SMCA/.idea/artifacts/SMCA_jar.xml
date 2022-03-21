@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SMCA:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SMCA_jar</output-path>
+    <root id="archive" name="SMCA.jar">
+      <element id="module-output" name="SMCA" />
+    </root>
+  </artifact>
+</component>
