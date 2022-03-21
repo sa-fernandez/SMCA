@@ -30,12 +30,12 @@ public class ServidorSensor {
                 tipo = tipo.toUpperCase();
                 System.out.print("Cantidad de tiempo (segundos) para generar medida: ");
                 tiempo = scanInt.nextInt();
-                System.out.println("Ruta a archivo de configuracion: ");
+                System.out.print("Ruta a archivo de configuracion: ");
                 config = scanLine.nextLine();
                 Sensor sensor = new Sensor(socket, tipo, tiempo, config);
                 sensor.start();
                 sensors.add(sensor);
-                System.out.print("Desea incluir otro sensor (S/N): ");
+                System.out.print("(S -> Incluir nuevo sensor || N -> Parar todos los sensores) > ");
                 opc = scanLine.nextLine();
                 opc = opc.toUpperCase();
                 if(opc.equals("N")){

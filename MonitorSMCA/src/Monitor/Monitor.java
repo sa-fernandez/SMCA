@@ -38,8 +38,8 @@ public class Monitor {
                 }
                 int valor = Integer.parseInt(parts[1]);
                 Medida medida = new Medida(tipo, valor);
+                System.out.println(medida);
                 if(controladorMonitor.evaluarMedida(valor)){
-                    System.out.println(medida);
                     controladorMonitor.persistirMedida(medida);
                 }else{
                     //EnviarAlerta
