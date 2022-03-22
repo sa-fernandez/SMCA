@@ -10,26 +10,26 @@ import java.util.Scanner;
 public class ControladorMonitor {
 
     IPersistencia iPersistencia = new Persistencia();
-    int limitMin;
-    int limitMax;
+    double limitMin;
+    double limitMax;
 
     public ControladorMonitor() {
         iPersistencia.connectDatabase();
     }
 
-    public int getLimitMin() {
+    public double getLimitMin() {
         return limitMin;
     }
 
-    public void setLimitMin(int limitMin) {
+    public void setLimitMin(double limitMin) {
         this.limitMin = limitMin;
     }
 
-    public int getLimitMax() {
+    public double getLimitMax() {
         return limitMax;
     }
 
-    public void setLimitMax(int limitMax) {
+    public void setLimitMax(double limitMax) {
         this.limitMax = limitMax;
     }
 
@@ -56,7 +56,7 @@ public class ControladorMonitor {
 
     }
 
-    public boolean evaluarMedida(int medida){
+    public boolean evaluarMedida(double medida){
         if(medida >= limitMin && medida <= limitMax){
             return true;
         }else{

@@ -38,7 +38,7 @@ public class Persistencia implements IPersistencia {
             String query = "insert into Medida values(?,?)";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, medida.getTipo().toString());
-            preparedStatement.setInt(2, medida.getValor());
+            preparedStatement.setDouble(2, medida.getValor());
             preparedStatement.executeUpdate();
         }catch(Exception e){
             e.printStackTrace();

@@ -5,12 +5,12 @@ import Enum.TipoMedida;
 public class Medida {
 
     TipoMedida tipo;
-    int valor;
+    double valor;
 
     public Medida() {
     }
 
-    public Medida(TipoMedida tipo, int valor) {
+    public Medida(TipoMedida tipo, double valor) {
         this.tipo = tipo;
         this.valor = valor;
     }
@@ -23,11 +23,11 @@ public class Medida {
         this.tipo = tipo;
     }
 
-    public int getValor() {
+    public double getValor() {
         return valor;
     }
 
-    public void setValor(int valor) {
+    public void setValor(double valor) {
         this.valor = valor;
     }
 

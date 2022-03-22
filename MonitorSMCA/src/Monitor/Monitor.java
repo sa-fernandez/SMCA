@@ -36,7 +36,7 @@ public class Monitor {
                 }else if(topic.equals("PH")){
                     tipo = TipoMedida.PH;
                 }
-                int valor = Integer.parseInt(parts[1]);
+                double valor = Double.parseDouble(parts[1]);
                 Medida medida = new Medida(tipo, valor);
                 System.out.println(medida);
                 if(controladorMonitor.evaluarMedida(valor)){
