@@ -1,5 +1,6 @@
 package Vista;
 
+import Controlador.ControladorAlerta;
 import Controlador.ControladorRegistro;
 import Modelo.Usuario;
 
@@ -7,9 +8,10 @@ import java.util.Scanner;
 
 public class SistemaCalidad {
 
-    static ControladorRegistro controladorRegistro = new ControladorRegistro();
+    static ControladorRegistro controladorRegistro;
 
     public static void main(String[] args) {
+        controladorRegistro = new ControladorRegistro(args[0]);
         System.out.println("====================================");
         System.out.println("=========SISTEMA DE CALIDAD=========");
         System.out.println("====================================");
@@ -57,6 +59,11 @@ public class SistemaCalidad {
 
         System.out.println("ALERTAS !");
 
+        try{
+            ControladorAlerta controladorAlertaTest = new ControladorAlerta("AlertRMI");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 }

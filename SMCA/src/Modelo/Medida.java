@@ -2,7 +2,9 @@ package Modelo;
 
 import Enum.TipoMedida;
 
-public class Medida {
+import java.io.Serializable;
+
+public class Medida implements Serializable {
 
     TipoMedida tipo;
     double valor;

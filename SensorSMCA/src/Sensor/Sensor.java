@@ -73,4 +73,9 @@ public class Sensor extends Thread {
             }
         }
     }
+
+    @Override
+    public String toString() {
+        return "Sensor -> [ " + tipo + " ]" + " , GENERACION -> [ " + tiempo + " segs ] , CONFIGURACION -> [ " + config + ".txt ] , LIMITES -> [ " + limitMin + "," + limitMax + " ]";
+    }
 }

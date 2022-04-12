@@ -3,6 +3,8 @@
     <output-path>$PROJECT_DIR$/out/artifacts/PersistenciaSMCA_jar</output-path>
     <root id="archive" name="PersistenciaSMCA.jar">
       <element id="module-output" name="PersistenciaSMCA" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../../../Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-java-8.0.28.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../SMCA/out/artifacts/SMCA_jar/SMCA.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

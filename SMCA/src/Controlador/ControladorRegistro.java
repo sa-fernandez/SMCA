@@ -5,22 +5,44 @@ import Modelo.Usuario;
 import Persistencia.Persistencia;
 
 import java.nio.charset.StandardCharsets;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
 import java.security.MessageDigest;
 
 public class ControladorRegistro {
 
-    IPersistencia iPersistencia = new Persistencia();
+    IPersistencia iPersistencia;
 
-    public ControladorRegistro() {
-        iPersistencia.connectDatabase();
+    public ControladorRegistro(String databaseHost) {
+        /**
+         * Bind Database.
+         */
+        try {
+            System.out.println("Binding rmi://" + databaseHost + ":" + 1098 + "/PersistenciaSMCA...");
+            Registry registry = LocateRegistry.getRegistry(databaseHost, 1098);
+            iPersistencia = (IPersistencia) registry.lookup("PersistenciaSMCA");
+            System.out.println("[PersistenciaSMCA] : ON");
+            iPersistencia.connectDatabase();
+        } catch(Exception e) {
+            System.err.println("System exception" + e);
+        }
     }
 
     public void registrarUsuario(Usuario usuario){
-        iPersistencia.persistirUsuario(usuario);
+        try {
+            iPersistencia.persistirUsuario(usuario);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     private boolean verificarUsuario(Usuario usuario){
-        return iPersistencia.verificarContrasena(usuario);
+        try {
+            return iPersistencia.verificarContrasena(usuario);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return false;
     }
 
     public boolean iniciarSesion(Usuario usuario){
