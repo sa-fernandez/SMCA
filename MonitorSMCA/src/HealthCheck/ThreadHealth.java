@@ -70,7 +70,7 @@ public class ThreadHealth extends Thread {
                 if(controladorMonitor.evaluarMedida(valor)){
                     controladorMonitor.persistirMedida(medida);
                 }else{
-                    //EnviarAlerta
+                    controladorMonitor.enviarAlerta(medida.toString());
                 }
             }
         }catch (Exception e){
