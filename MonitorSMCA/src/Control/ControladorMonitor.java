@@ -3,7 +3,6 @@ package Control;
 import Interface.IControladorAlerta;
 import Interface.IPersistencia;
 import Modelo.Medida;
-import Persistencia.Persistencia;
 
 import java.io.File;
 import java.rmi.registry.LocateRegistry;

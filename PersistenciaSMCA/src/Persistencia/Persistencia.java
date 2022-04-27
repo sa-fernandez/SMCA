@@ -64,8 +64,10 @@ public class Persistencia extends UnicastRemoteObject implements IPersistencia {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("select * from Usuario");
             while(resultSet.next()){
-                if(usuario.getPassword().equals(resultSet.getString("contrasenia"))){
-                    result = true;
+                if(usuario.getUsername().equals(resultSet.getString("nombreUsu"))) {
+                    if (usuario.getPassword().equals(resultSet.getString("contrasenia"))) {
+                        result = true;
+                    }
                 }
             }
         }catch(Exception e){

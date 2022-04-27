@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6e3c1a9d-73d0-4823-ae08-312c1603fd2d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/zeromq_jeromq.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MonitorAuxiliarSMCA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bounds/config_bounds_OXI.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bounds/config_bounds_PH.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bounds/config_bounds_TEMP.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HealthCheck/ThreadHealth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonitorAuxiliar/MonitorAuxiliar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/MonitorSMCA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../MonitorSMCA/MonitorSMCA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/out/artifacts/MonitorSMCA_jar/MonitorSMCA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/out/production/MonitorSMCA/Control/ControladorMonitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/out/production/MonitorSMCA/HealthCheck/HealthCheck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/out/production/MonitorSMCA/HealthCheck/ThreadHealth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/out/production/MonitorSMCA/Monitor/Monitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/out/production/MonitorSMCA/Monitor/MonitorAuxiliar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/src/Control/ControladorMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MonitorSMCA/src/Control/ControladorMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/src/HealthCheck/HealthCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/src/HealthCheck/ThreadHealth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PersistenciaSMCA/out/artifacts/PersistenciaSMCA_jar/PersistenciaSMCA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PersistenciaSMCA/out/production/PersistenciaSMCA/Interface/IPersistencia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PersistenciaSMCA/out/production/PersistenciaSMCA/Persistencia/Persistencia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PersistenciaSMCA/out/production/PersistenciaSMCA/Server/PersistenciaServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PublishServerSMCA/out/production/PublishServerSMCA/ServidorPS/ServidorPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PublishServerSMCA/out/production/PublishServerSMCA/ServidorPS/ServidorPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PublishServerSMCA/src/ServidorPS/ServidorPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PublishServerSMCA/src/ServidorPS/ServidorPS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SMCA/out/artifacts/SMCA_jar/SMCA.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../SMCA/out/artifacts/SMCA_jar/SMCA.jar" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28OoHnzJrFUP6vLtrG92ILiVOl0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/safer/Documents/GitHub/SMCA/MonitorAuxiliarSMCA&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\safer\Documents\GitHub\SMCA\MonitorAuxiliarSMCA" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MonitorAuxiliar" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MonitorAuxiliar.MonitorAuxiliar" />
+      <module name="MonitorAuxiliarSMCA" />
+      <option name="PROGRAM_PARAMETERS" value="TEMP localhost 5557 localhost 5556 localhost localhost" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MonitorAuxiliar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MonitorAuxiliar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e3c1a9d-73d0-4823-ae08-312c1603fd2d" name="Changes" comment="" />
+      <created>1651096915547</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651096915547</updated>
+      <workItem from="1651096919290" duration="1612000" />
+      <workItem from="1651099460405" duration="64000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

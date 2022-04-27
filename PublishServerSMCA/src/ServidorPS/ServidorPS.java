@@ -15,15 +15,15 @@ public class ServidorPS {
             socket.bind("tcp://" + args[0] + ":" + args[1]);
 
             ZMQ.Socket tSocket = context.createSocket(SocketType.SUB);
-            tSocket.connect("tcp://" + args[0] + ":" + args[2]);
+            tSocket.connect("tcp://" + args[2] + ":" + args[3]);
             tSocket.subscribe("TEMP".getBytes());
 
             ZMQ.Socket oSocket = context.createSocket(SocketType.SUB);
-            oSocket.connect("tcp://" + args[0] + ":" + args[2]);
+            oSocket.connect("tcp://" + args[2] + ":" + args[3]);
             oSocket.subscribe("OXI".getBytes());
 
             ZMQ.Socket pSocket = context.createSocket(SocketType.SUB);
-            pSocket.connect("tcp://" + args[0] + ":" + args[2]);
+            pSocket.connect("tcp://" + args[2] + ":" + args[3]);
             pSocket.subscribe("PH".getBytes());
 
             ZMQ.Poller poller = context.createPoller(3);

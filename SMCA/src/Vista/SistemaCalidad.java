@@ -22,8 +22,7 @@ public class SistemaCalidad {
         do{
             System.out.print("(R -> Registro || I -> Ingreso) > ");
             String opc = scan.nextLine();
-            opc.toUpperCase();
-            if(opc.equals("R")){
+            if(opc.toUpperCase().equals("R")){
                 System.out.print("Ingrese su nuevo nombre de usuario: ");
                 usuario = scan.nextLine();
                 System.out.print("Ingrese su nueva contrasena: ");
@@ -33,7 +32,7 @@ public class SistemaCalidad {
                 controladorRegistro.registrarUsuario(actual);
                 System.out.println("Usuario Registrado");
                 seguir = false;
-            }else if(opc.equals("I")){
+            }else if(opc.toUpperCase().equals("I")){
                 System.out.print("Ingrese su nombre de usuario: ");
                 usuario = scan.nextLine();
                 System.out.print("Ingrese su contrasena: ");

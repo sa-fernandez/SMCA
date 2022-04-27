@@ -7,38 +7,27 @@ import org.zeromq.SocketType;
 import org.zeromq.ZContext;
 import org.zeromq.ZMQ;
 
-import java.io.File;
-import java.util.Scanner;
-
 public class ThreadHealth extends Thread {
 
     ZMQ.Socket socket;
-    String connection;
+    String host;
+    String port;
     String sensor;
-    String config;
     String databaseHost;
     String alertHost;
 
-    public ThreadHealth(String config, String databaseHost, String alertHost) {
-        this.config = config;
+    public ThreadHealth(String sensor, String host, String port, String databaseHost, String alertHost) {
+        this.sensor = sensor;
+        this.host = host;
+        this.port = port;
         this.databaseHost = databaseHost;
         this.alertHost = alertHost;
-        try{
-            File file = new File(config);
-            Scanner scan = new Scanner(file);
-            while(scan.hasNextLine()){
-                String data = scan.nextLine();
-                String[] parts = data.split("-");
-                connection = String.valueOf(parts[0]);
-                sensor = String.valueOf(parts[1]);
-            }
-        }catch (Exception e){
-            e.printStackTrace();
-        }
     }
 
     @Override
     public void run() {
+
+        String connection = "tcp://" + host + ":" + port;
 
         ControladorMonitor controladorMonitor = new ControladorMonitor(databaseHost, alertHost);
         controladorMonitor.establecerLimites("bounds\\config_bounds_" + sensor + ".txt");
@@ -77,4 +66,5 @@ public class ThreadHealth extends Thread {
             e.printStackTrace();
         }
     }
+
 }

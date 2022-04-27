@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4">
+<module type="GENERAL_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
@@ -7,21 +7,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="mysql-connector-java-8.0.28" level="project" />
     <orderEntry type="library" name="zeromq.jeromq" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../SMCA/out/artifacts/SMCA_jar/SMCA.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../PersistenciaSMCA/out/artifacts/PersistenciaSMCA_jar/PersistenciaSMCA.jar!/" />
+          <root url="jar://$MODULE_DIR$/../MonitorSMCA/out/artifacts/MonitorSMCA_jar/MonitorSMCA.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
