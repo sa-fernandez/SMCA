@@ -16,7 +16,7 @@ public class ServidorSensor {
         try (ZContext context = new ZContext()) {
 
             ZMQ.Socket socket = context.createSocket(SocketType.PUB);
-            socket.bind("tcp://" + args[0] + ":" + args[1]);
+            socket.bind("tcp://*:" + args[0]);
 
             String[] topics = {"TEMP", "OXI", "PH"};
             boolean seguir = true;
@@ -48,7 +48,7 @@ public class ServidorSensor {
                     do {
                         System.out.print("(P -> Parar todos los sensores) > ");
                         opc = scanLine.nextLine();
-                        if (opc.equals("P")) {
+                        if (opc.toUpperCase().equals("P")) {
                             seguir = false;
                         }
                     } while (seguir);

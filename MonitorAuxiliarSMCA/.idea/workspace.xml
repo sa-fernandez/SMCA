@@ -5,33 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e3c1a9d-73d0-4823-ae08-312c1603fd2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/zeromq_jeromq.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MonitorAuxiliarSMCA.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bounds/config_bounds_OXI.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bounds/config_bounds_PH.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bounds/config_bounds_TEMP.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HealthCheck/ThreadHealth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MonitorAuxiliar/MonitorAuxiliar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/MonitorSMCA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../MonitorSMCA/MonitorSMCA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/out/artifacts/MonitorSMCA_jar/MonitorSMCA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/out/production/MonitorSMCA/Control/ControladorMonitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/out/production/MonitorSMCA/HealthCheck/HealthCheck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/out/production/MonitorSMCA/HealthCheck/ThreadHealth.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/out/production/MonitorSMCA/Monitor/Monitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/out/production/MonitorSMCA/Monitor/MonitorAuxiliar.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SMCA/.idea/libraries/zeromq_jeromq.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitorAuxiliarSMCA/HealthCheck/ThreadHealth.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitorAuxiliarSMCA/HealthCheck/ThreadHealth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitorAuxiliarSMCA/MonitorAuxiliar/MonitorAuxiliar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitorAuxiliarSMCA/MonitorAuxiliar/MonitorAuxiliar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HealthCheck/ThreadHealth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HealthCheck/ThreadHealth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonitorAuxiliar/MonitorAuxiliar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonitorAuxiliar/MonitorAuxiliar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/configs/config_OXI.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/configs/config_PH.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/configs/config_TEMP.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/out/artifacts/MonitorSMCA_jar/MonitorSMCA.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../MonitorSMCA/out/artifacts/MonitorSMCA_jar/MonitorSMCA.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/out/production/MonitorSMCA/Control/ControladorMonitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MonitorSMCA/out/production/MonitorSMCA/Control/ControladorMonitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/out/production/MonitorSMCA/Monitor/Monitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MonitorSMCA/out/production/MonitorSMCA/Monitor/Monitor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MonitorSMCA/src/Control/ControladorMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MonitorSMCA/src/Control/ControladorMonitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/src/HealthCheck/HealthCheck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/src/HealthCheck/ThreadHealth.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PersistenciaSMCA/out/artifacts/PersistenciaSMCA_jar/PersistenciaSMCA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PersistenciaSMCA/out/production/PersistenciaSMCA/Interface/IPersistencia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PersistenciaSMCA/out/production/PersistenciaSMCA/Persistencia/Persistencia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PersistenciaSMCA/out/production/PersistenciaSMCA/Server/PersistenciaServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonitorSMCA/src/Monitor/Monitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MonitorSMCA/src/Monitor/Monitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PublishServerSMCA/out/production/PublishServerSMCA/ServidorPS/ServidorPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PublishServerSMCA/out/production/PublishServerSMCA/ServidorPS/ServidorPS.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PublishServerSMCA/src/ServidorPS/ServidorPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PublishServerSMCA/src/ServidorPS/ServidorPS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SMCA/out/artifacts/SMCA_jar/SMCA.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../SMCA/out/artifacts/SMCA_jar/SMCA.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SMCA/SMCA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SMCA/SMCA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SMCA/out/production/SMCA/Vista/SistemaCalidad.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SMCA/out/production/SMCA/Vista/SistemaCalidad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SMCA/src/Vista/SistemaCalidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SMCA/src/Vista/SistemaCalidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SensorSMCA/out/production/SensorSMCA/Sensor/Sensor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SensorSMCA/out/production/SensorSMCA/Sensor/Sensor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SensorSMCA/out/production/SensorSMCA/Sensor/ServidorSensor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SensorSMCA/out/production/SensorSMCA/Sensor/ServidorSensor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SensorSMCA/src/Sensor/Sensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SensorSMCA/src/Sensor/Sensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SensorSMCA/src/Sensor/ServidorSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SensorSMCA/src/Sensor/ServidorSensor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +88,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="MonitorAuxiliar.MonitorAuxiliar" />
       <module name="MonitorAuxiliarSMCA" />
-      <option name="PROGRAM_PARAMETERS" value="TEMP localhost 5557 localhost 5556 localhost localhost" />
+      <option name="PROGRAM_PARAMETERS" value="TEMP localhost 5557 localhost 5556 localhost 4999" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="MonitorAuxiliar.*" />
@@ -119,6 +115,9 @@
       <updated>1651096915547</updated>
       <workItem from="1651096919290" duration="1612000" />
       <workItem from="1651099460405" duration="64000" />
+      <workItem from="1652661151074" duration="1570000" />
+      <workItem from="1652734226477" duration="966000" />
+      <workItem from="1652735997665" duration="3600000" />
     </task>
     <servers />
   </component>

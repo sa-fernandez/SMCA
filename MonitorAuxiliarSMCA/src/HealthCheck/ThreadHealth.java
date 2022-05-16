@@ -14,14 +14,14 @@ public class ThreadHealth extends Thread {
     String port;
     String sensor;
     String databaseHost;
-    String alertHost;
+    ZMQ.Socket alertSocket;
 
-    public ThreadHealth(String sensor, String host, String port, String databaseHost, String alertHost) {
+    public ThreadHealth(String sensor, String host, String port, String databaseHost, ZMQ.Socket alertSocket) {
         this.sensor = sensor;
         this.host = host;
         this.port = port;
         this.databaseHost = databaseHost;
-        this.alertHost = alertHost;
+        this.alertSocket = alertSocket;
     }
 
     @Override
@@ -29,12 +29,12 @@ public class ThreadHealth extends Thread {
 
         String connection = "tcp://" + host + ":" + port;
 
-        ControladorMonitor controladorMonitor = new ControladorMonitor(databaseHost, alertHost);
-        controladorMonitor.establecerLimites("bounds\\config_bounds_" + sensor + ".txt");
-
-        System.out.println("[MONITOR AUXILIAR] -> " + sensor + " | " + connection);
-
         try (ZContext context = new ZContext()){
+
+            ControladorMonitor controladorMonitor = new ControladorMonitor(databaseHost, alertSocket);
+            controladorMonitor.establecerLimites("bounds\\config_bounds_" + sensor + ".txt");
+
+            System.out.println("[MONITOR AUXILIAR] -> " + sensor + " | " + connection);
 
             socket = context.createSocket(SocketType.SUB);
             socket.connect(connection);
@@ -56,10 +56,11 @@ public class ThreadHealth extends Thread {
                 double valor = Double.parseDouble(parts[1]);
                 Medida medida = new Medida(tipo, valor);
                 System.out.println(medida);
-                if(controladorMonitor.evaluarMedida(valor)){
+                if(controladorMonitor.evaluarError(valor)){
                     controladorMonitor.persistirMedida(medida);
-                }else{
-                    controladorMonitor.enviarAlerta(medida.toString());
+                    if(!controladorMonitor.evaluarRango(valor)){
+                        controladorMonitor.enviarAlerta(medida.toString());
+                    }
                 }
             }
         }catch (Exception e){

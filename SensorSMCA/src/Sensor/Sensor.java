@@ -62,7 +62,6 @@ public class Sensor extends Thread {
     public void run() {
         while (!Thread.currentThread().isInterrupted()) {
             try {
-                Random rand = new Random();
                 LocalDateTime localDateTime = LocalDateTime.now();
                 DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy-HH:mm:ss");
                 String message = tipo + " " + (Math.round(medidaRandom() * 100.0) / 100.0) + " " + dateTimeFormatter.format(localDateTime);
@@ -76,6 +75,6 @@ public class Sensor extends Thread {
 
     @Override
     public String toString() {
-        return "Sensor -> [ " + tipo + " ]" + " , GENERACION -> [ " + tiempo + " segs ] , CONFIGURACION -> [ " + config + ".txt ] , LIMITES -> [ " + limitMin + "," + limitMax + " ]";
+        return "Sensor -> [ " + tipo + " ]" + " , GENERACION -> [ " + tiempo + " segs ] , CONFIGURACION -> [ " + config + " ] , LIMITES -> [ " + limitMin + "," + limitMax + " ]";
     }
 }

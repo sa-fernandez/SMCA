@@ -1,8 +1,8 @@
 package Control;
 
-import Interface.IControladorAlerta;
 import Interface.IPersistencia;
 import Modelo.Medida;
+import org.zeromq.ZMQ;
 
 import java.io.File;
 import java.rmi.registry.LocateRegistry;
@@ -12,11 +12,11 @@ import java.util.Scanner;
 public class ControladorMonitor {
 
     IPersistencia iPersistencia;
-    IControladorAlerta iControladorAlerta;
+    ZMQ.Socket alertSocket;
     double limitMin;
     double limitMax;
 
-    public ControladorMonitor(String databaseHost, String alertHost) {
+    public ControladorMonitor(String databaseHost, ZMQ.Socket alertSocket) {
         /**
          * Bind Database.
          */
@@ -29,17 +29,7 @@ public class ControladorMonitor {
         } catch(Exception e) {
             System.err.println("System exception" + e);
         }
-        /**
-         * Bind Alert.
-         */
-        try {
-            System.out.println("Binding rmi://" + alertHost + ":" + 1099 + "/AlertRMI...");
-            Registry registry = LocateRegistry.getRegistry(alertHost, 1099);
-            iControladorAlerta = (IControladorAlerta) registry.lookup("AlertRMI");
-            System.out.println("[AlertRMI] : ON");
-        } catch(Exception e) {
-            System.err.println("System exception" + e);
-        }
+        this.alertSocket = alertSocket;
     }
 
     public double getLimitMin() {
@@ -82,14 +72,18 @@ public class ControladorMonitor {
     }
 
     public void enviarAlerta(String alerta){
-        try{
-            iControladorAlerta.desplegarAlerta(alerta);
-        }catch (Exception e){
-            e.printStackTrace();
+        alertSocket.send("[ ALERTA ]" + " " + alerta);
+    }
+
+    public boolean evaluarError(double medida){
+        if(medida <  0){
+            return false;
+        }else{
+            return true;
         }
     }
 
-    public boolean evaluarMedida(double medida){
+    public boolean evaluarRango(double medida){
         if(medida >= limitMin && medida <= limitMax){
             return true;
         }else{
