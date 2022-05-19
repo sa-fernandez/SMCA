@@ -41,6 +41,7 @@ public class ServidorSensor {
                         tiempo = rand.nextInt(20 - 5) + 5;
                         config = "configs\\config_" + tipo + ".txt";
                         Sensor sensor = new Sensor(socket, tipo, tiempo, config);
+                        Thread.sleep(1000L);
                         sensor.start();
                         System.out.println(sensor);
                         sensors.add(sensor);
