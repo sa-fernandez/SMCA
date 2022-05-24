@@ -15,7 +15,7 @@ public class MonitorAuxiliar {
             ZMQ.Socket socket = context.createSocket(SocketType.REQ);
             socket.connect("tcp://" + args[1] + ":" + args[6]);
             ZMonitor zMonitor = new ZMonitor(context, socket);
-            zMonitor.add(ZMonitor.Event.CONNECTED, ZMonitor.Event.DISCONNECTED);
+            zMonitor.add(ZMonitor.Event.CONNECTED, ZMonitor.Event.DISCONNECTED, ZMonitor.Event.CLOSED);
             zMonitor.start();
 
             ZMQ.Socket alertSocket = context.createSocket(SocketType.PUB);
@@ -24,11 +24,12 @@ public class MonitorAuxiliar {
             ThreadHealth t = new ThreadHealth(args[0], args[3], args[4], args[5], alertSocket);
             while (!Thread.currentThread().isInterrupted()) {
                 ZMonitor.Event event = zMonitor.nextEvent().type;
-                System.out.println("[ ESTADO ] -> " + event);
-                if(event == ZMonitor.Event.DISCONNECTED && !t.isAlive()){
+                if((event == ZMonitor.Event.DISCONNECTED || event == ZMonitor.Event.CLOSED) && !t.isAlive()){
+                    System.out.println("[ ESTADO ] -> " + event);
                     t.start();
                 }
                 if(event == ZMonitor.Event.CONNECTED && t.isAlive()){
+                    System.out.println("[ ESTADO ] -> " + event);
                     System.out.println("[MONITOR AUXILIAR] -> STOP");
                     t.stop();
                     t = new ThreadHealth(args[0], args[3], args[4], args[5], alertSocket);
